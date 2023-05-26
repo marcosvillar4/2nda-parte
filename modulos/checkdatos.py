@@ -1,6 +1,7 @@
 
-def vervotodni(listatot):
+def vervoto(listatot, path):
     import modulos.checkdnival as dni           #Import check valores de dni
+    import modulos.check_region as region
     listdniactual = []                          # Lista temporal para candidatos votados
     votoactual = []                             # Lista temporal para el voto actual
 
@@ -24,7 +25,7 @@ def vervotodni(listatot):
 
     
     valor = str(dni.checkdni())
-    region = input("Region: ")
+    reg = str(region.check(path))
     print("Categoria (1/ presidente, 2/vice, 3/senador, 4/diputado)")
 
     val = False
@@ -42,7 +43,7 @@ def vervotodni(listatot):
             val = False
 
     votoactual.append(valor)
-    votoactual.append(region)
+    votoactual.append(reg)
     votoactual.append(cat)
     print (f"Su voto es {votoactual}")
 
