@@ -1,3 +1,2 @@
-hola 
+Para ejecutar correr main.py
 
-culito sucio

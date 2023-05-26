@@ -1,17 +1,15 @@
 
 def vervotodni(listatot):
-
+    import modulos.checkdnival as dni
     listdniactual = []
     votoactual = []
 
     def find(lista, valor):
         try:
             lista.index(valor)
-            print("valor encontrado")
             check(lista)
             return 
         except ValueError:
-            print("Valor no se repite")
             return 0
     
     def check(lista):
@@ -25,8 +23,7 @@ def vervotodni(listatot):
             return False
 
     
-
-    valor = input("DNI:")
+    valor = str(dni.checkdni())
     region = input("Region: ")
     print("Categoria (1/ presidente, 2/vice, 3/senador, 4/diputado)")
 
@@ -68,4 +65,3 @@ def vervotodni(listatot):
     print(listatot)
 
     return listatot
-
