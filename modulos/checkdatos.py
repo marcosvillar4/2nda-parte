@@ -1,10 +1,10 @@
 
 def vervotodni(listatot):
-    import modulos.checkdnival as dni
-    listdniactual = []
-    votoactual = []
+    import modulos.checkdnival as dni           #Import check valores de dni
+    listdniactual = []                          # Lista temporal para candidatos votados
+    votoactual = []                             # Lista temporal para el voto actual
 
-    def find(lista, valor):
+    def find(lista, valor):             # Buscamos el dni en la lista
         try:
             lista.index(valor)
             check(lista)
@@ -14,7 +14,7 @@ def vervotodni(listatot):
     
     def check(lista):
         listdniactual
-        listdniactual.append(lista[2])
+        listdniactual.append(lista[2])  # Buscamos el valor representante del candidato
 
     def indexcheck(valactual, listdni):
         if listdni.count(valactual) != 1:
