@@ -1,5 +1,5 @@
 import os
-from modulos import votacionwrite as votwrite
+import modulos.votacionwrite as votwrite
 
 vottotal = []
 resp = ""
@@ -13,4 +13,3 @@ while resp != "N" and resp != "NO" and resp != "FIN":
         print("Desea agregar otro voto?")
         resp = str.upper(str(input("Respuesta: ")))
 
-os.system("PAUSE")
