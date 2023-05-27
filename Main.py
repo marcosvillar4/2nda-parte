@@ -8,13 +8,17 @@ vottotal = []
 absolute_path = os.path.dirname(__file__)
 relative_path = "csv"
 cadena = suf.registro()
-
-for i in range (1, cadena):
-    error = votwrite.csvwrite()
+i = 0
+while i != cadena:
+    error = votwrite.csvwrite(absolute_path, vottotal)
     if error == True:
-       i = i - 1
+        i = i
     else: 
-        votwrite.csvwrite(absolute_path, vottotal)
+        print("Voto Valido")
+        i = i + 1
+    error = False
+    print(i)
+        
    
 
 os.system("PAUSE")
