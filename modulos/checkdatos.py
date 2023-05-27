@@ -2,6 +2,7 @@
 def vervoto(listatot, path):
     import modulos.checkdnival as dni           #Import check valores de dni
     import modulos.check_region as region
+    import modulos.partidos as partidos
     listcanactual = []                          # Lista temporal para candidatos votados
     listregactual = []
     votoactual = []                          # Lista temporal para el voto actual
@@ -54,9 +55,12 @@ def vervoto(listatot, path):
             print("Valor no valido")
             val = False
 
+    par = str(partidos.check(path))
+
     votoactual.append(valor)
     votoactual.append(reg)
     votoactual.append(cat)
+    votoactual.append(par)
     print (f"Su voto es {votoactual}")
 
     listatot.append(votoactual)

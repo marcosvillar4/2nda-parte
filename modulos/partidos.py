@@ -2,7 +2,7 @@ def check(path):
     import csv
     import platform
 
-    provincias = []
+    partidos = []
 
     if platform.system() == 'Windows':
         csvfile = path + "\csv\\partidos.csv"
@@ -13,7 +13,7 @@ def check(path):
         reader = csv.reader(regiones)
         for row in reader:
             print(row)
-            provincias.append(int(row[1]))
+            partidos.append(int(row[1]))
     
     print("Seleccione el id del partido que quiere votar: ")
     valido = False
@@ -23,7 +23,7 @@ def check(path):
         except: 
             valido = False
         try:
-            provincias.index(resp)
+            partidos.index(resp)
             valido = True
         except:
             valido = False
