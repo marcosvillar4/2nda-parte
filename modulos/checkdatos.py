@@ -39,7 +39,7 @@ def vervoto(listatot, path):
     
     valor = str(dni.checkdni())
     reg = str(region.check(path))
-    print("Categoria (1/ presidente, 2/vice, 3/senador, 4/diputado)")
+    print("Categoria (1/ presidente y vicepresidente, 2/diputado, 3/senador, 4/gobernador y vicegobernador)")
 
     val = False
 
