@@ -17,8 +17,5 @@ while i != cadena:
         print("Voto Valido")
         i = i + 1
     error = False
-    print(i)
-        
-   
 
 os.system("PAUSE")
