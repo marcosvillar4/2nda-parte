@@ -6,7 +6,7 @@ def csvwrite(path, vottotal):
     header = ["DNI, REGION, CARGO, PARTIDO"]
     fin = ["FIN"]
 
-    rows = datos.vervoto(vottotal, path)
+    rows, error = datos.vervoto(vottotal, path)
 
     if platform.system() == 'Windows':
         csvfile = path + "\csv\\votos.csv"
@@ -18,3 +18,4 @@ def csvwrite(path, vottotal):
         writer.writerow(header)
         writer.writerows(rows)
         writer.writerow(fin)
+    return error
