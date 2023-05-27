@@ -10,7 +10,7 @@ def sufragios():
                 return False, esc
         except ValueError:
             return False, esc
-        
+             
 def registro():
         error = False
         error1 = False
@@ -25,5 +25,3 @@ def registro():
                     break
 
         return cadena
-
-registro()
