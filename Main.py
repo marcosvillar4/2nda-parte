@@ -1,16 +1,15 @@
 import os
 import modulos.votacionwrite as votwrite
+import modulos.sufragios as suf
 
 vottotal = []
-resp = ""
+
 
 absolute_path = os.path.dirname(__file__)
 relative_path = "csv"
-while resp != "N" and resp != "NO" and resp != "FIN":
+cadena = suf.registro()
+for i in range (1, cadena):
     votwrite.csvwrite(absolute_path, vottotal)
-    resp = ""
-    while resp != "N" and resp != "NO" and resp != "FIN" and resp != "S" and resp != "SI":
-        print("Desea agregar otro voto?")
-        resp = str.upper(str(input("Respuesta: ")))
+   
 
 os.system("PAUSE")
