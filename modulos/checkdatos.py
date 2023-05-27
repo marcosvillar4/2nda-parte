@@ -78,11 +78,8 @@ def vervoto(listatot, path):
 
         if valido == False:
             print("Voto no valido, usted ya voto en otra region")
-            print(listatot)
             error = True
             break
-            
-
     
     rep = False
     for indexpos in range(0, len(listcanactual)):
@@ -96,6 +93,4 @@ def vervoto(listatot, path):
     if error == True:
         listatot.pop()
             
-    print(listatot)
-
     return listatot
