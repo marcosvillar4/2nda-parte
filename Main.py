@@ -1,5 +1,5 @@
 import os
-import modulos.votacionwrite as votwrite
+from modulos import votacionwrite as votwrite
 
 vottotal = []
 resp = ""
