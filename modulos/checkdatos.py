@@ -97,4 +97,4 @@ def vervoto(listatot, path):
     if error == True:
         listatot.pop()
             
-    return listatot
+    return listatot,error
