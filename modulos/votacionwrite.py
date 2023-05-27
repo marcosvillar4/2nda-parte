@@ -9,9 +9,9 @@ def csvwrite(path, vottotal):
     rows = datos.vervoto(vottotal, path)
 
     if platform.system() == 'Windows':
-        csvfile = path + "\csv\partidos.csv"
+        csvfile = path + "\csv\\votos.csv"
     elif platform.system() == 'Linux':
-        csvfile = path + '/csv/partidos.csv'
+        csvfile = path + '/csv/votos.csv'
  
     with open (csvfile, "w") as votos:
         writer = csv.writer(votos)
