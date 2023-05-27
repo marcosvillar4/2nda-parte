@@ -22,6 +22,7 @@ def registro():
                 if error1 == False:
                     print("Caracter no valido, el numero puede tener solamente numeros que sean mayores a 0")
                 elif error1 == True:
-                    break
+                    return cadena
+                    
 
         return cadena
