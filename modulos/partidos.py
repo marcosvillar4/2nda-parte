@@ -13,7 +13,7 @@ def check(path):
         reader = csv.reader(partidos)
         for row in reader:
             print(row)
-            partidoslist.append(int(row[1]))
+            partidoslist.append(int(row[2]))
     
     print("Seleccione el id del partido que quiere votar: ")
     valido = False
