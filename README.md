@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-!(COCOS.png)
+!(/COCOS.png)
 =======
 !COCOS.png
 >>>>>>> 0bf91fb7a75c317403df3747cce70df4c944987c
