@@ -2,7 +2,7 @@
 Programa desarrollado para el campeonato de python en la UADE 2023
 
 ## Acerca del Programa
-El programa permite almacenar datos de manera persistente y organizada en archivos csv acerca de las elecciones.
+El programa permite almacenar datos acerca de las elecciones de manera persistente y organizada en archivos csv.
 
 ### Como correr el programa?
 1. Ejecutar main.py
