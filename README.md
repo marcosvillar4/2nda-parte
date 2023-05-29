@@ -1,5 +1,5 @@
 
-![coocking](https://github.com/[marcosvillar4]/[Etapa-2-]/blob/[experimentalfran]/COCOS.png?raw=true)
+![coocking](https://github.com/[marcosvillar4]/[Etapa-2-]/blob/[experimentalfran]/COCOS.png)
 
 # Campeonato UADE Python 2023
 Programa desarrollado para el campeonato de python en la UADE 2023
